@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\winformsapp1\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\debdeb\\source\\repos\\winformsapp1\\winformsapp1\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\debdeb\\source\\repos\\winformsapp1\\winformsapp1\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\debdeb\\source\\repos\\winformsapp1\\winformsapp1\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\debdeb\\source\\repos\\winformsapp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\debdeb\\source\\repos\\winformsapp1\\winformsapp1\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\winformsapp1\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2FE3F57-DED0-47BA-9700-4AAA1BF87174}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Queries.cs",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Queries.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Queries.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Queries.cs",
+              "RelativeToolTip": "WinFormsApp1\\Queries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T09:09:20.297Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashBoardForm.cs",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\DashBoardForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DashBoardForm.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\DashBoardForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\DashBoardForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:31:44.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\RegisterForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\RegisterForm.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwEAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T07:41:40.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T07:41:37.472Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T07:38:22.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeData.cs",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\EmployeeData.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\EmployeeData.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\EmployeeData.cs",
+              "RelativeToolTip": "WinFormsApp1\\EmployeeData.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwBIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T08:40:03.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Form1.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T06:41:17.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashBoardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\DashBoardForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\DashBoardForm.cs",
+              "ToolTip": "C:\\Users\\Debdeb\\source\\repos\\WinFormsApp1\\WinFormsApp1\\DashBoardForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\DashBoardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T06:23:54.834Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
