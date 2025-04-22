@@ -160,6 +160,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1257, 789);
             panel2.TabIndex = 4;
+            panel2.Paint += panel2_Paint;
             // 
             // status_cb
             // 
@@ -206,6 +207,7 @@
             clear_btn.TabIndex = 24;
             clear_btn.Text = "Clear";
             clear_btn.UseVisualStyleBackColor = false;
+            clear_btn.Click += clear_btn_Click;
             // 
             // employee_picture
             // 
@@ -246,6 +248,7 @@
             delete_btn.TabIndex = 21;
             delete_btn.Text = "Delete";
             delete_btn.UseVisualStyleBackColor = false;
+            delete_btn.Click += delete_btn_Click;
             // 
             // update_btn
             // 
@@ -264,6 +267,7 @@
             update_btn.TabIndex = 20;
             update_btn.Text = "Update";
             update_btn.UseVisualStyleBackColor = false;
+            update_btn.Click += update_btn_Click;
             // 
             // add_btn
             // 
@@ -296,7 +300,7 @@
             // viewActiveInactive1
             // 
             viewActiveInactive1.BackColor = Color.FromArgb(85, 72, 135);
-            viewActiveInactive1.Location = new Point(0, 0);
+            viewActiveInactive1.Location = new Point(0, -5);
             viewActiveInactive1.Margin = new Padding(3, 5, 3, 5);
             viewActiveInactive1.Name = "viewActiveInactive1";
             viewActiveInactive1.Size = new Size(205, 312);
@@ -449,6 +453,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1195, 301);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // DashBoardForm
             // 

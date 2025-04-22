@@ -17,11 +17,28 @@ namespace WinFormsApp1
     public partial class DashBoardForm : Form
     {
         private Connection conn = new Connection();
+
+
         public DashBoardForm()
         {
             InitializeComponent();
             viewActiveInactive1.Visible = false;
             displayEmployeeData(); // to display data from database to data grid view
+
+            RefreshData();
+        }
+
+        public void RefreshData()
+        {
+            //if (InvokeRequired)
+            //{
+            //    Invoke((MethodInvoker)RefreshData);
+            //    return;
+
+                
+            //}
+            viewActiveInactive1.displayAE();
+            viewActiveInactive1.displayIE();
         }
 
         private void signout_btn__Click(object sender, EventArgs e)
@@ -88,7 +105,7 @@ namespace WinFormsApp1
 
                     sqlconnection.Open();
 
-                    string query = "SELECT COUNT(*) FROM employees WHERE pkEmpID = @empID";
+                    string query = "SELECT COUNT(*) FROM employees WHERE pkEmpID = @empID AND delete_date IS NULL";
 
                     using MySqlCommand checkEmp = new MySqlCommand(query, sqlconnection);
 
@@ -131,6 +148,9 @@ namespace WinFormsApp1
                         displayEmployeeData();
 
                         MessageBox.Show("Added Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        clearFields();
+
+                        RefreshData();
                     }
 
                 }
@@ -160,7 +180,184 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            string employeeID = emp_tb.Text.Trim();
+            string fullName = fullname_tb.Text.Trim();
+            string gender = gender_cb.Text.Trim();
+            string contactNum = contact_tb.Text.Trim();
+            string salaryText = salary_tb.Text.Trim();
+            string position = position_cb.Text.Trim();
+            string status = status_cb.Text.Trim();
+
+            if (string.IsNullOrEmpty(employeeID) || string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(gender) ||
+                string.IsNullOrEmpty(contactNum) || string.IsNullOrEmpty(position) || string.IsNullOrEmpty(status) ||
+                string.IsNullOrEmpty(salaryText) || !int.TryParse(salaryText, out int salary) || employee_picture.Image == null)
+            {
+                MessageBox.Show("Please fill all the blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult check = MessageBox.Show($"Are you sure you want to UPDATE Employee ID: {employeeID}?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (check == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using MySqlConnection sqlconnection = conn.connectToSql();
+                        sqlconnection.Open();
+
+                        DateTime today = DateTime.Today;
+
+                        string updateData = "UPDATE employees SET full_name = @fullName, gender = @gender, contact_number = @contactNum, salary = @salary, position = @position, update_date = @updateDate, status = @status " +
+                            "WHERE pkEmpID = @employeeID";
+
+                        using MySqlCommand cmd = new MySqlCommand(updateData, sqlconnection);
+
+                        cmd.Parameters.AddWithValue("@fullName", fullName);
+                        cmd.Parameters.AddWithValue("@gender", gender);
+                        cmd.Parameters.AddWithValue("@contactNum", contactNum);
+                        cmd.Parameters.AddWithValue("@salary", salary);
+                        cmd.Parameters.AddWithValue("@position", position);
+                        cmd.Parameters.AddWithValue("@updateDate", today);
+                        cmd.Parameters.AddWithValue("@status", status);
+                        cmd.Parameters.AddWithValue("@employeeID", employeeID);
+
+                        cmd.ExecuteNonQuery();
+                        displayEmployeeData();
+
+                        MessageBox.Show("Updated successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        clearFields();
+                        RefreshData();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cancelled", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
+        }
+        public void clearFields()
+        {
+            emp_tb.Text = "";
+            fullname_tb.Text = "";
+            gender_cb.SelectedIndex = -1;
+            contact_tb.Text = "";
+            salary_tb.Text = "";
+            position_cb.SelectedIndex = -1;
+            status_cb.SelectedIndex = -1;
+            employee_picture.Image = null;
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                emp_tb.Text = row.Cells[1].Value.ToString();
+                fullname_tb.Text = row.Cells[2].Value.ToString();
+                gender_cb.Text = row.Cells[3].Value.ToString();
+                contact_tb.Text = row.Cells[4].Value.ToString();
+                salary_tb.Text = row.Cells[5].Value.ToString();
+                position_cb.Text = row.Cells[6].Value.ToString();
+                status_cb.Text = row.Cells[7].Value.ToString();
+
+                string imagePath = row.Cells[8].Value.ToString();
+
+                if (imagePath != null)
+                {
+                    employee_picture.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    employee_picture.Image = null;
+                }
+            }
+        }
+
+        private void clear_btn_Click(object sender, EventArgs e)
+        {
+            clearFields();
+        }
+
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+            string employeeID = emp_tb.Text.Trim();
+            string fullName = fullname_tb.Text.Trim();
+            string gender = gender_cb.Text.Trim();
+            string contactNum = contact_tb.Text.Trim();
+            string salaryText = salary_tb.Text.Trim();
+            string position = position_cb.Text.Trim();
+            string status = status_cb.Text.Trim();
+
+            if (string.IsNullOrEmpty(employeeID) || string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(gender) ||
+                string.IsNullOrEmpty(contactNum) || string.IsNullOrEmpty(position) || string.IsNullOrEmpty(status) ||
+                string.IsNullOrEmpty(salaryText) || !int.TryParse(salaryText, out int salary) || employee_picture.Image == null)
+            {
+                MessageBox.Show("Please fill all the blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult check = MessageBox.Show($"Are you sure you want to DELETE Employee ID: {employeeID}?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (check == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using MySqlConnection sqlconnection = conn.connectToSql();
+                        sqlconnection.Open();
+
+                        DateTime today = DateTime.Today;
+
+                        string updateData = "UPDATE employees SET delete_date = @deleteDate WHERE pkEmpID = @employeeID";
+
+                        using MySqlCommand cmd = new MySqlCommand(updateData, sqlconnection);
+
+                        cmd.Parameters.AddWithValue("@deleteDate", today);
+                        cmd.Parameters.AddWithValue("@employeeID", employeeID);
+                        
+
+                        cmd.ExecuteNonQuery();
+                        displayEmployeeData();
+
+                        MessageBox.Show("Deleted successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        clearFields();
+                        RefreshData();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cancelled", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
         }
     }
 }
+
+
+

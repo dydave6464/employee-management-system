@@ -38,3 +38,4 @@ C:\Users\Debdeb\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net9.0-windows\
 C:\Users\Debdeb\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net9.0-windows\Sprache.dll
 C:\Users\Debdeb\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.DashBoardForm.resources
 C:\Users\Debdeb\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.ViewActiveInactive.resources
+C:\Users\Debdeb\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net9.0-windows\WinFormsApp1.sourcelink.json

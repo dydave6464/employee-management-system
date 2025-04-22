@@ -11,15 +11,15 @@ namespace WinFormsApp1
     {
         private Connection conn = new Connection();
 
-        public int ID { get; set; }
-        public string EmployeeID { get; set; }
-        public string FullName { get; set; }
-        public string Gender { get; set; }
-        public string ContactNumber { get; set; }
-        public int Salary { get; set; }
-        public string Position { get; set; }
-        public string Status { get; set; }
-        public string Image { get; set; }
+        public int ID { get; set; } //0
+        public string EmployeeID { get; set; } //1
+        public string FullName { get; set; }    //2
+        public string Gender { get; set; }  //3
+        public string ContactNumber { get; set; }   //4
+        public int Salary { get; set; } //5
+        public string Position { get; set; }    //6
+        public string Status { get; set; }  //7
+        public string Image { get; set; }   //8
 
         //public EmployeeData(int id, string employeeID, string fullName, string gender, string contactNumber, int salary, string position, string status, string image)
         //{
